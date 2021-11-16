@@ -1,0 +1,15 @@
+"""
+#Nama : Arhanif adrian riadi
+#Nim  : 065002100018
+#Prodi: Sistem informasi
+#Tugas Algoritma pemrograman (2)
+"""
+
+#Pernyataan tugas
+#Menghitung panjang dan lebar kamar mandi
+
+f=input("Siapa Nama Kamu: ")
+p=float(input("Coba hitung berapa meter panjang kamar mandi itu: "))
+l=float(input("Coba hitung lebar dari kamar mandi itu: "))
+L=p*l #ekspresi
+print("luas kamar mandi itu adalah", str(L))
