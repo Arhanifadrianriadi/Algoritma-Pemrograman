@@ -1,0 +1,33 @@
+"""
+Nama    :Arhanif adrian riadi
+Nim     :065002100018
+Prodi   :Sistem informasi
+Matkul  :File heandling
+"""
+#Membuat file heandling
+
+def edit():
+    
+    biodata = open("Biodata.txt",'w')
+    biodata.write(str())
+    biodata.close()
+    
+nama = str(input("Input nama anda : "))
+umur = str(input("Input umur anda : "))
+alamat = str(input("Input alamat anda : "))
+email = str(input("Input alamat email anda : "))
+dosen = str(input("Input nama dosen anda : "))
+
+def hasil():
+    
+    baca = open("Biodata.txt",'r')
+    text = baca.read()
+    print(text)
+    baca.close()
+    
+print("Berikut merupakan data yang telah anda input")
+print(nama)
+print(umur)
+print(alamat)
+print(email)
+print(dosen)
