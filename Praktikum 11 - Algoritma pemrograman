@@ -1,0 +1,46 @@
+"""
+Nama    :Arhanif adrian riadi
+Nim     :065002100018
+Prodi   :Sistem informasi
+Materi  :Sorting 
+"""
+print(" List angka sebelum diurutkan [1,2,12,22,32,42,52] ")
+def bubbleSort(array):
+    for passnum in range(len(array)-1,0,-1):
+        for z in range(passnum):
+            if array[z]>array[z+1]:
+                temp = array[z]
+                array[z] = array[z+1]
+                array[z+1] = temp
+
+def binary_search(array,num_find):
+
+    mulai = 0
+    end = len(array) - 1
+    mid = (mulai + end)//2
+    found = False
+    position = -1
+    bubbleSort(array)
+    while mulai <= end:
+        if array[mid] == num_find:
+            found = True
+            position = mid
+            break
+        if num_find > array[mid]:
+            mulai = mid + 1
+            mid = (mulai + end)//2
+        else:
+            end = mid - 1
+            mid = (mulai + end)//2
+
+    print(" Hasil urutan : ", array)
+    return (found, position-1)
+
+array= [1,2,12,22,32,42,52]
+num = int(input('Input angka yang ingin dimasukkan : '))
+
+found = binary_search(array,num )
+if found[0]:
+    print('Nomor %d ditemukan di posisi %d'%(num, found[1]+2))
+else:
+    print('Nomor %d tidak ditemukan'%num)
