@@ -1,0 +1,26 @@
+"""
+Nama    :Arhanif adrian riadi
+Nim     :065002100018
+Prodi   :Sistem informasi
+Materi  :Object Oriented Programming Pada Python
+"""
+
+class mahasiswa:
+    
+   def __init__(self,nama,nim,angkatan):
+        
+        self.nama = nama
+        self.nim = nim
+        self.angkatan = angkatan
+        
+   def biodata_mahasiswa(self):
+       print("Nama kamu adalah : ",self.nama)
+       print("NIM kamu adalah : ",self.nim)
+       print("Kamu adalah angkatan : ",self.angkatan)
+       
+nama = str(input("input nama kamu : "))
+nim = str(input("Input NIM kamu : "))
+angkatan = str(input("Masukkan angkatan kamu : "))
+
+biodata = mahasiswa(nama,nim,angkatan)
+biodata.biodata_mahasiswa()
