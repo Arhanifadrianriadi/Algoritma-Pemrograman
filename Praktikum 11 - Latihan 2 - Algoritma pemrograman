@@ -1,0 +1,23 @@
+"""
+Nama    :Arhanif adrian riadi
+Nim     :065002100018
+Prodi   :Sistem informasi
+Materi  :List & Sorting
+"""
+
+def exchange(listnum, s, t):
+    temp = listnum[s]
+    listnum[s] = listnum[t]
+    listnum[t] = temp
+
+def bubblesort(listnum, z):
+    for v in range(z-1):
+        if listnum[v] > listnum[v+1]:
+            exchange(listnum, v, v+1)
+    if z-1 > 1:
+        bubblesort(listnum, z-1)
+
+print("Sebelum sorting: [15, 30, 45, 55, 75, 90, 110, 120, 80, 60]")
+Listnum = [15, 30, 45, 55, 75, 90, 110, 120, 80, 60]
+bubblesort(Listnum, len(Listnum))
+print("Sudah sorting: ", Listnum)
