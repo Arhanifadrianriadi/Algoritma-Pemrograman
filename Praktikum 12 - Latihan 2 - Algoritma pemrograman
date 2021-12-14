@@ -1,0 +1,73 @@
+"""
+Nama    :Arhanif adrian riadi
+Nim     :065002100018
+Prodi   :Sistem informasi
+Materi  :
+"""
+
+class mahasiswa:
+    
+    def _init_(self,nilai,nama):
+        
+        self.nilai = nilai
+        self.nama = nama
+        
+    
+    def ubah(self): 
+        
+        print("Input nama anda disini : " + self.nama)
+        print("Print nilai anda disini : " + str(self.nilai))
+       
+             
+
+perulangan = 0 
+
+while perulangan == 0 :
+    
+    print("((( Program OOP )))")
+    print("1.Mendeklarasikan Objek")
+    print("2.Menampilkan Objek")
+    print("3.Mengganti Objek")
+    print("4.Menghapus Objek")
+    print("5.Menutup Program")
+    
+    pilihan = int(input("Pilih pilihan anda (1/2/3/4/5) :  "))
+    
+    if pilihan == 1 :
+        
+        nama = str(input("Masukkan Nama Kamu : "))
+        nilai = str(input("Masukkan Nilai Kamu : "))
+        biodata = mahasiswa(nilai,nama)
+        print("Data anda berhasil ditambahkan")
+        
+    elif pilihan == 2 :
+        
+        biodata = mahasiswa(nilai,nama)
+        biodata.ubah()
+        
+    elif pilihan ==3 :
+        
+        a ="nama"
+        b ="nilai"
+        
+        perubahan=input("Apa yang ingin kamu ubah (Nama/Nilai) : ")
+        
+        if(perubahan == a):
+            
+            nama = input("masukan namamu :")
+            print("data berhasil di ubah")
+            
+        elif(perubahan == b):
+            
+            nilai = input("masukan nilaimu :")
+            print("data berhasil diubah")
+            
+    elif pilihan == 4 :
+        
+        nama = "none"
+        nilai = "none"
+        print("data berhasil di hapus")
+        
+    elif pilihan == 5:
+        print("terima kasih telah menggunakan program")
+        break
